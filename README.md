@@ -14,7 +14,7 @@ The main goal is to make development as quick and efficient as possible. To achi
 
 Demo: https://altru.eu.meteorapp.com
 
-Features:
+## Features
 - [x] Sign In / Sign Up
 - [x] Listings by logged user
 - [x] Add Listing

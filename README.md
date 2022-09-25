@@ -1,4 +1,4 @@
-# The Altruistic F/LOSS marketplace
+# The Altruistic F/LOSS Marketplace
 Altruistic F/LOSS marketplace for goods & services and needs (using Chakra-UI, React, MeteorJS).
 
 ## What and why this stack?
@@ -10,10 +10,9 @@ The main goal is to make development as quick and efficient as possible. To achi
 -   [Formik ](https://formik.org/)- Most used Form lib for React focuses on making easier-to-write forms
 -   [MongoDB ](https://www.mongodb.com/)- NoSQL and really powerful for prototyping and creating ready-to-use apps out of the box
 -   [Meteor Cloud ](https://cloud.meteor.com/)- Cloud provider that makes Deploying a Server with, Database included painless
+-	[fredmaiaarantes/simpletasks](https://github.com/fredmaiaarantes/simpletasks)
 
-Demo: https://szergazd.eu.meteorapp.com/
-
-Forked from: [fredmaiaarantes/simpletasks](https://github.com/fredmaiaarantes/simpletasks)
+Demo: https://altru.eu.meteorapp.com
 
 Features:
 - [x] Sign In / Sign Up

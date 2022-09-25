@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
 import { Box, Button, HStack, Stack, Checkbox } from '@chakra-ui/react';
+import { DeleteIcon } from '@chakra-ui/icons';
 
 export const TaskItem = memo(({ task, onMarkAsDone, onDelete }) => (
   <HStack mt={4}>
@@ -19,7 +20,7 @@ export const TaskItem = memo(({ task, onMarkAsDone, onDelete }) => (
         size="xs"
         onClick={() => onDelete(task._id)}
       >
-        Remove
+        <DeleteIcon />
       </Button>
     </Stack>
   </HStack>

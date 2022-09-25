@@ -47,7 +47,7 @@ export const TaskItems = ({
           size="xs"
           onClick={() => setHideDone(!hideDone)}
         >
-          {hideDone ? 'Show All Tasks' : 'Show Pending'}
+          {hideDone ? 'Show All Listings' : 'Show Active Listings'}
         </Button>
       </Stack>
     </HStack>

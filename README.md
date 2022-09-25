@@ -1,5 +1,5 @@
-# Charm - Simple Tasks
-Built with my new preferred stack: CHARM (Chakra-UI, React, Meteor).
+# The Altruistic F/LOSS marketplace
+Altruistic F/LOSS marketplace for goods & services and needs (using Chakra-UI, React, MeteorJS).
 
 ## What and why this stack?
 The main goal is to make development as quick and efficient as possible. To achieve this have selected these technologies:
@@ -11,21 +11,35 @@ The main goal is to make development as quick and efficient as possible. To achi
 -   [MongoDB ](https://www.mongodb.com/)- NoSQL and really powerful for prototyping and creating ready-to-use apps out of the box
 -   [Meteor Cloud ](https://cloud.meteor.com/)- Cloud provider that makes Deploying a Server with, Database included painless
 
+Demo: https://szergazd.eu.meteorapp.com/
 
-Demo: https://simpletasks.meteorapp.com/
-
-Author: [@fredmaiaarantes](https://twitter.com/fredmaiaarantes)
+Forked from: [fredmaiaarantes/simpletasks](https://github.com/fredmaiaarantes/simpletasks)
 
 Features:
-- Sign In / Sign Up
-- List Tasks by logged user
-- Add Task
-- Remove Task
-- Mark Task as Done
-- Filter Tasks by Status
+- [x] Sign In / Sign Up
+- [x] Listings by logged user
+- [x] Add Listing
+- [x] Remove Listing
+- [x] Mark Listing as Resolved
+- [x] Filter Listing by Status
+- [ ] Add Listing Description[str.md]
+- [ ] Add Listing Tags[str.autload]
+- [ ] Add Listing Type[goods,service,needs]
+- [ ] Add Listing Offer[currency[USD,EUR,HUF,RON,BTC,DOGE,BCH,ETH,LTC,HIVE,HBD,VLT,XMR,DASH], exchange[true,altruism_score], love[altruism_score], zone[int]]
+- [ ] Add Listing Term[inception,expiration]
+- [ ] Filter Listing by Type[goods,service,needs] ("`is:goods|service&needs`")
+- [ ] Filter Listing by Term[after|before|older|newer|newer_than|older_than] ("`after:YYYY/MM/DD newer_than:2d`")
+- [ ] Filter Listing by Tags[str] ("`has:new`" OR "`#new`")
+- [ ] Search[str[Name,Description,Tags]]
+- [ ] User Profiles
+- [ ] User Relations
+- [ ] User Relation Map Zones
+- [ ] Marketplace of Listings
+- [ ] Payment Processors
+- [ ] API
 
-Video demo:
-https://www.loom.com/share/50b9e1a513904b138fb772a332facbfb
+Vision:
+https://pixeldrain.com/u/HWtH1eWg
 
 ## Running the template
 
@@ -74,18 +88,6 @@ meteor deploy <select a subdomain>.meteorapp.com --free --mongo
 - aldeed:collection2
 
 ## Tech Explanation
-
-### How is the project structured?
-
-Before explaining, this template is inspired by the works of [Alex Kondov](https://alexkondov.com/): [Tao of Node ](https://alexkondov.com/tao-of-node/) and [Tao of React](https://alexkondov.com/tao-of-react/)
-
-Most Meteor apps are built similar to a monorepo with their divisions for back end and front end declared respectively in `ui ` and `api` folders. You can have a common folder to share code between frontend and backend. For example, if you use TypeScript, you can share types in your codebase.
-
-![Project structure](README-Assets/project_structure.png)
-
-A good practice that needs to be pointed out is organizing the folders by feature so that when we think about that specific domain feature, we only need to go to that feature folder, and everything exclusive to that feature should be there.
-
-We usually place things in the common directory when we have items that will be used in many places.
 
 ### Backend decisions
 
@@ -197,4 +199,3 @@ For our UI components, we have chosen Chakra UI because of its productivity that
 We have included Dark and Light modes. It can be seen those configs in `ui/App.jsx`
 
 You can see Chakra-UI's full component list on t[heir site](https://chakra-ui.com/getting-started)
-

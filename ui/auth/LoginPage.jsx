@@ -22,6 +22,7 @@ import { RoutePaths } from '../Routes';
 import { useTracker } from 'meteor/react-meteor-data';
 import { SignedIn } from './SignedIn';
 import { object, string } from 'yup';
+import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 
 /* eslint-disable import/no-default-export */
 export default function LoginPage() {
@@ -58,7 +59,7 @@ export default function LoginPage() {
   };
 
   const formik = useFormik({
-    initialValues: { username: 'fredmaia', password: 'abc123' },
+    initialValues: { username: 'altruist', password: 'SzeretetGazdaság' },
     validationSchema,
     onSubmit,
   });
@@ -78,7 +79,7 @@ export default function LoginPage() {
             Sign in to your account
           </Heading>
           <Text fontSize="lg" color={useColorModeValue('gray.600', 'gray.400')}>
-            to start creating your simple tasks
+            to list your goods & services and needs
           </Text>
         </Stack>
         <Box
@@ -119,7 +120,7 @@ export default function LoginPage() {
                       size="sm"
                       onClick={() => setShowPassword(!showPassword)}
                     >
-                      {showPassword ? 'Hide' : 'Show'}
+                      {showPassword ? <ViewOffIcon /> : <ViewIcon />}
                     </Button>
                   </InputRightElement>
                 </InputGroup>

@@ -15,8 +15,8 @@ import { ErrorStatus } from '../common/ErrorStatus';
 
 export const TaskForm = () => {
   const validationSchema = object({
-    description: string('Enter task description').required(
-      'Task description is required'
+    description: string('Enter listing description').required(
+      'Listing description is required'
     ),
   });
 
@@ -34,7 +34,7 @@ export const TaskForm = () => {
   };
 
   const formik = useFormik({
-    initialValues: { description: '' },
+    initialValues: { description: 'asd' },
     initialStatus: null,
     validationSchema,
     onSubmit,
@@ -54,7 +54,7 @@ export const TaskForm = () => {
               name="description"
               onChange={formik.handleChange}
               value={formik.values.description}
-              placeholder="Type to add new tasks"
+              placeholder="Type to add new listing"
             />
             <FormErrorMessage>{formik.errors.description}</FormErrorMessage>
           </FormControl>
@@ -68,7 +68,7 @@ export const TaskForm = () => {
               isLoading={formik.isSubmitting}
               colorScheme="blue"
             >
-              Add Task
+              Add Listing
             </Button>
           </InputRightElement>
         </InputGroup>

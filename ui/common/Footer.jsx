@@ -30,21 +30,21 @@ export const Footer = () => (
           <IconButton
             as="a"
             target="_blank"
-            href="https://github.com/fredmaiaarantes/simpletasks"
+            href="https://github.com/eapo/altrueco"
             aria-label="GitHub"
             icon={<FaGithub fontSize="20px" />}
           />
           <IconButton
             as="a"
             target="_blank"
-            href="https://twitter.com/fredmaiaarantes"
+            href="https://twitter.com/ErdelyiValto"
             aria-label="Twitter"
             icon={<FaTwitter fontSize="20px" />}
           />
           <IconButton
             as="a"
             target="_blank"
-            href="https://linkedin.com/in/fredmaiaarantes"
+            href="https://linkedin.com/in/forikaendre"
             aria-label="LinkedIn"
             icon={<FaLinkedin fontSize="20px" />}
           />

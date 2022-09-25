@@ -47,7 +47,7 @@ export const Navbar = () => {
             fontFamily="heading"
             textAlign="left"
           >
-            Simple Tasks
+            The Altruistic Marketplace
           </Text>
         </Flex>
 
@@ -62,6 +62,12 @@ export const Navbar = () => {
             aria-label={colorMode === 'light' ? 'Moon Icon' : 'Sun Icon'}
           >
             {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+          </Button>
+          <Button
+            onClick={toggleColorMode}
+            aria-label={colorMode === 'light' ? 'Show Info' : 'Hide Info'}
+          >
+            <InfoIcon />
           </Button>
           {user && (
             <Button fontSize="sm" fontWeight={400} onClick={logout}>
